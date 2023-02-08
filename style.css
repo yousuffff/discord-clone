@@ -1,0 +1,398 @@
+@font-face{
+    font-family: newFont;
+    src: url(fonts/Ginto-Nord/Ginto-Nord-700.woff2);
+}
+@font-face {
+    font-family: nav-font;
+    src: url(fonts/gg-sans/ggsans-Bold.ttf);
+}
+@font-face {
+    font-family: nav-btn-font;
+    src: url(fonts/gg-sans/ggsans-Normal.ttf);
+}
+@font-face {
+    font-family: btn-font;
+    src: url(fonts/gg-sans/ggsans-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* font-family: 'Noto Sans', sans-serif; */
+}
+.wrapper{
+    
+    overflow-x:hidden;
+    overflow-y: auto;
+    height: 100vh;
+    width: 100%;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    perspective: 10px;
+}
+.main-container1{
+    position: relative;
+    width: 100vw;
+    height: 620px;
+}    
+.main-container{
+    
+    width: 100vw;
+    height: 680px;
+    object-fit: fill;
+    
+}
+.reverse-container{
+    flex-direction: row-reverse;
+}
+.container{
+
+    margin: 0 auto;
+    width: 1260px;
+    
+}
+.nav{
+    
+    width: 60vw;
+    height: 7vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between ;
+
+}
+.nav-link{
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link a{
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: nav-font;
+    
+}
+.nav-link a:hover{
+    text-decoration: underline;
+}
+.nav-btn{
+    font-family: nav-btn-font;
+    height: 4vh;
+    width: 6vw;
+    border-radius: 40px;
+    font-size: 14px;
+    border: none;
+}
+.hov:hover{
+    color: #5865f2;;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.main-img{
+    background-color: #404eed;
+    margin-left: -1280px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -9;
+    object-fit: fill;
+    
+}
+.right-img{
+    position: absolute;
+    bottom: -1%;
+    right: 0%;
+}
+.left-img{
+    position: absolute;
+    bottom: -1%;
+     left: -4%;
+}
+.intro-section{
+    margin:0 auto;
+    padding: 120px 40px;
+    width: 60vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.heading{
+    font-family: newFont ;
+    font-size: 53px;
+    color: #ffffff;
+    line-height: 54px;
+    
+}
+.para{
+    max-width: 780px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    /* opacity: 80%; */
+    line-height: 32.5px;
+    font-family: nav-btn-font;
+}
+.intro-btn{
+    width: 17vw;
+    height: 56px;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+}
+.black-btn{
+    background-color: #23272a;
+    color: #ffffff;
+}
+.black-btn:hover{
+    background-color: #36393f;
+    color: #ffffff;
+}
+.hov img{
+    width: 25px;
+    height: 25px;
+    font: #404eed;
+}
+.white-btn{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #23272a;
+    font-family: nav-btn-font;
+}
+.intro-section-btn{
+    display: flex;
+    gap: 60px;
+}
+.container2{
+    margin: 0 auto;
+    padding: 120px 40px;
+    gap: 120px;
+    display: flex;
+    width: 65vw;
+    justify-content: center;
+    align-items: center;
+}
+.text-container2{
+    display: flex;
+    flex-direction:column;
+    gap: 40px;
+    width: 380px;   
+    
+}
+.heading-c2{
+
+    font-size: 48px;
+    color: #23272a;
+    line-height: 57.6px;
+    font-family: nav-font;
+}
+.para-c2{
+    font-size: 20px;
+    line-height:32.5px;
+    color: #23272a;
+    font-weight: 400;
+    font-family: nav-btn-font;
+}
+.revers{
+
+    flex-direction: row-reverse;
+    background-color: #f6f6f6;
+}
+.con3{
+    margin: 0 auto;
+    width: 65%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   gap: 20px;
+}
+.section4-text{
+    padding-top: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    gap: 24px;
+}
+.h2{
+    font-size: 40px;
+    line-height: 38px;
+    font-weight: bolder;
+    color: #23272a;
+    text-align: center;
+    font-family: newFont;
+}
+.para5{
+    text-align: center;
+    font-size: 20px;
+    line-height: 32.5px;
+    /* opacity: 50%; */
+    font-family: nav-btn-font;
+}
+.section4{
+    width: 100%;
+}
+.main-container-4{
+    background-color: #f6f6f6;
+    /* height: 1080px; */
+    width: 100vw;
+    height: 25vh;
+}
+.mini-container{
+
+    margin: 0 auto;
+    width: 65vw;
+    display: flex ;
+}
+.sub-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* margin-top: 80px; */
+    width: 65vw;
+    position: relative;
+}
+.section5-img{
+    position: absolute;
+    top: -4%;
+}
+.sub-footer p{
+     margin-top: 20px;
+    font-size: 32px;
+    text-align: center;
+    font-family: nav-font;
+}
+.btn-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   background-color: #5865f2;
+   color: #ffffff;
+   font-family: nav-btn-font;
+}
+.hov-1:hover{
+    color: #f6f6f6;
+    background-color: #7983f5;
+}
+.foot-container{
+    
+    padding-top: 80px;
+    height: 60vh;
+    background-color: #23272a;
+}
+.foot-nav-link{
+    /* padding: 20px; */
+    margin: 0 auto;
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+}
+.foot-right{
+    
+    padding-bottom: 30px;
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+.foot-heading{
+    color: #5865f2;
+    font-size: 32px;
+    line-height: 32px;
+    font-family: newfont;
+}
+.discord-logo{
+    margin: 0 auto;
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-brands{
+    color: #ffffff;
+    height: 24px;
+    width: 24px;
+}
+.fa-brands:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.5);
+}
+
+.flag-container{
+    display: flex;
+    gap: 10px;
+    color: white;
+    
+}
+.flag-container p{
+    font-family: btn-font;
+    font-size: 14px;
+}
+.flag{
+    width: 35px;
+    height: 22px;
+    display: inline;
+}
+.foot-right li{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    list-style-type: none;
+}
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.product,.policies,.resources,.company{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.foot-right div{
+    color: #5865f2;
+    font-family: nav-btn-font;
+}
+.hr-line{
+    margin: 0 auto 30px auto;
+    height: 2px;
+    width: 65vw;
+    background-color: #5865f2;
+}
+.discord-logo button{
+    width: 76px;
+    height: 38px;
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    background-color: #5865f2;
+}
+.discord-logo button:hover{
+    background-color: #7983f5;
+    box-shadow: rgba(0, 0, 0, 0.2)0px 8px 15px 0px;
+    cursor: pointer;
+}
+.foot-left{
+    width: 15vw;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: 900;
+}
+.social-icon{
+    display: flex;
+    gap: 26px;
+    height: 24px;
+    width: 24px;
+}
